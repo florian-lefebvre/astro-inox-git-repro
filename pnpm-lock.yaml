@@ -17,6 +17,15 @@ importers:
         specifier: ^5.0.0
         version: 5.5.2(rollup@4.35.0)(typescript@5.8.2)
 
+  website:
+    dependencies:
+      astro:
+        specifier: ^5.5.2
+        version: 5.5.2(rollup@4.35.0)(typescript@5.8.2)
+      pkg:
+        specifier: workspace:*
+        version: link:../package
+
 packages:
 
   '@astrojs/compiler@2.11.0':

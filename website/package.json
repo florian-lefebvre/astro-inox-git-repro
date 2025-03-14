@@ -1,0 +1,7 @@
+{
+    "name": "website",
+    "dependencies": {
+        "astro": "^5.5.2",
+        "pkg": "workspace:*"
+    }
+}
