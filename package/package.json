@@ -1,0 +1,9 @@
+{
+    "name": "pkg",
+    "peerDependencies": {
+        "astro": "^5.0.0"
+    },
+    "dependencies": {
+        "@inox-tools/content-utils": "^0.9.0"
+    }
+}

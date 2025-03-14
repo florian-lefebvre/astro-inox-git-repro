@@ -1,0 +1,18 @@
+---
+import { getCollection, render, type z } from "astro:content";
+import { getLatestCommitDate } from "@it-astro:content/git";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+  return pages.map((page) => ({
+    params: { id: page.id },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const lastUpdated = await getLatestCommitDate("pages", page.id);
+console.log({ lastUpdated });
+---
+
+<h1>{page.data.title}</h1>
